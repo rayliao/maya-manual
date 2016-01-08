@@ -38,6 +38,51 @@
     else xxxx
 ```
 
+## 数组和对象
+> 使用 `Array` 和 `Object` 语法, 而不使用 `Array` 和 `Object` 构造器.
+
+例如：
+
+```js
+//array
+    var arrIds = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //object
+    var objItem = {
+            a: 0,
+            b: 'your name',
+            c: function () {
+
+            }
+    };
+```
+
+**不要这样写，除非特殊情况**
+
+```js
+//array
+var arrItems = new Array();
+//object
+var objItems = new Object();
+```
+
+
+## 不要修改内置的原型对象
+
+> 不要为了方便直接在`原生对象的原型`上面添加`方法`或其他`属性`等
+
+为了方便管理，以及不跟其他框架的方法冲突，不允许修改内置的原型对象
+
+```js
+ 千万不要修改内置对象, 如
+Object.prototype 和 Array.prototype 等内置的原型对象
+```
+
+**如果需要，可以自己构建一个类，专门扩展这些方法，使用的时候用自己的类就好了**
+
+*另外*
+> 一些ES5添加的方法我们会用es5-shim来处理兼容，整个平台都通用，不用你自己去写例如`Array.indexOf`等方法
+
+
 
 ## 注释
 > 写给同事看，也是写给自己看
