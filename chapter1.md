@@ -10,6 +10,13 @@
 ![是否安装成功](1.png)
 
 
+### 全局安装gulp
+
+````
+$ npm install -g gulp
+````
+
+
 ### 选择开发工具
 
 很多种开发工具，你要使用记事本我也没意见啦。推荐使用`sublime text 3`，因为开发过程`css`使用`sass`，所以需要安装`sass`的插件，可以先安装`package control`，然后安装`sass`。如果不清楚请查阅[sublime text 3官网](http://www.sublimetext.com/3)。
