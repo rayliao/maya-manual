@@ -98,4 +98,8 @@ define(['jquery'],function($){
     </script>
 }
 ```
-> 一般在模块里面引用jquery 并把事件注册在 document ready事件里面，这样在页面上就直接初始化就可以了,视图里面尽量少写脚本
+一般在模块里面引用jquery 并把事件注册在 document ready事件里面，这样在页面上就直接初始化就可以了,视图里面尽量少写脚本
+
+> 注
+
+`xx`代表项目 
