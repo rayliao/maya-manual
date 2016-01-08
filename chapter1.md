@@ -24,7 +24,7 @@ $ npm install -g gulp
 
 ### 安装项目依赖
 
-在项目根目录打开命令行，安装`package.json`里面的依赖模块。
+在项目根目录打开命令行(windows用户可以按住`Shift`键，选择项目文件夹，点击鼠标右键，选择“在此处打开命令行窗口”)，安装`package.json`里面的依赖模块。
 ````
 $ npm install
 ````
