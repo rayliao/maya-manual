@@ -30,18 +30,18 @@
 | 名称 | 别名或路径  | 说明 |
 | -- | -- | -- |
 | `pager` | `ko-pager`  | 一个`knockout`分页模块  |
-| `ajax` | `ry/common/ajax`  | 加了loading效果的ajax方法  |
-| `clip` | `ry/common/clip`  | 整合`zeroclipboard`的flash复制解决方案 |
+| `ajax` | `xx/common/ajax`  | 加了loading效果的ajax方法  |
+| `clip` | `xx/common/clip`  | 整合`zeroclipboard`的flash复制解决方案 |
 | `datepicker` | `datepicker` | jQuery ui datepicker 默认配置，已包含多语言处理 |
 | `datetimepicker` | `datetimepicker` | 时间日期选择插件 |
 | `dialog` | `dialog` | 对话框的一些默认配置以及扩展  |
-| `editor` | `ry/common/editor` | ueditor编辑器的一些默认配置  |
+| `editor` | `xx/common/editor` | ueditor编辑器的一些默认配置  |
 | `handlebar` | `hb` | handelbar的扩展配置 |
 | `icheck` | `ko-icheck`  | `icheck`默认配置，以及`ko`的一个自定义绑定 |
 | `ko-with-mapping` | `ko`  | `ko`的一些自定义绑定  |
-| `reg` | `ry/common/reg`  | 项目中用到的正则表达式集合 |
+| `reg` | `xx/common/reg`  | 项目中用到的正则表达式集合 |
 | `state-bar` | `ko`  | 自定义状态条，支持自定义数据 |
-| `tip` | `ry/common/tip`  | 提示框 |
+| `tip` | `xx/common/tip`  | 提示框 |
 | `upload` | `upload`  | 上传插件的默认配置  |
 | `utils` | `utils`  | 项目中用到的一些公共方法，包括String.fomart的扩展等 |
 
@@ -50,4 +50,8 @@
 
 1. [什么是commonjs](http://wiki.commonjs.org/wiki/CommonJS) &  [阮老师的博客](http://javascript.ruanyifeng.com/nodejs/commonjs.html)
 2. [什么是iconfont](http://blog.wpjam.com/m/iconfont/)
+
+> 注
+
+`xx`代表项目 
 
