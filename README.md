@@ -1,4 +1,4 @@
-My Awesome Book
+MAYA前端开发指南
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+给新同事看的，前端开发的一些温馨提示和指南。
