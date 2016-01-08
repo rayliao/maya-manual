@@ -20,7 +20,7 @@
 ## 定义模块
 > 项目里面的模块全都定义成匿名模块，就是不要手动添加模块id，这个id后面用工具自动生成 例如：
 
-`ry/page/cash/settings` 该模块对应的是视图下面-> Cash -> Settings页面的业务逻辑
+`xx/page/cash/settings` 该模块对应的是视图下面-> Cash -> Settings页面的业务逻辑
 
 ```js
 define(['jquery'],function($){
@@ -84,13 +84,13 @@ define(['jquery'],function($){
 
 
 ## 怎样在页面上加载并初始化一个模块
-> 例如cash下面的settings页面 对应的模块是 `ry/page/cash/settings/main`
+> 例如cash下面的settings页面 对应的模块是 `xx/page/cash/settings/main`
 
 在`Razor`视图里面这样调用即可
 ```js
 @section Assets{
     <script>
-        require(['ry/page/cash/settings/main'],function(Settings){
+        require(['xx/page/cash/settings/main'],function(Settings){
             //如果有参数就通过options传递进去给模块内部使用,没有的话不用传递
             var options = {};
             new Settings(options)
