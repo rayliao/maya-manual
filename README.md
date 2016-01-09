@@ -4,9 +4,9 @@ MAYA前端开发指南
 给新同事看的，前端开发的一些温馨提示和指南，完全新手教程，大侠请跳过。文档持续完善中...
 
 知识点：
-* nodejs
-* gulp
-* sass
+* nodejs，[Node.js教程|菜鸟教程](http://www.runoob.com/nodejs/nodejs-tutorial.html)
+* gulp，[gulp入门指南](http://www.gulpjs.com.cn/docs/getting-started/)
+* sass，[sass入门教程](http://www.w3cplus.com/sassguide/)
 
 ````
 //
