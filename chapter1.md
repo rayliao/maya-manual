@@ -16,6 +16,14 @@
 $ npm install -g gulp
 ````
 
+### 全局安装requirejs
+
+压缩资源文件的时候要用上，只是开发可以不用安装。
+
+````
+$ npm install -g requirejs
+````
+
 
 ### 选择开发工具
 
