@@ -9,5 +9,5 @@
    * [form](form.md)
    * [underscorejs](underscorejs.md)
 * [前端优化](optimize.md)
-   * 图片优化
+   * [图片优化](image_optimize.md)
 
