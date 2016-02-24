@@ -58,3 +58,11 @@ gulp.task('fontmin', function (){
     });
 });
 ````
+
+打开命令行，输入命令：
+````
+$ gulp fontmin
+````
+会生成字体文件和样式文件。
+
+done.
