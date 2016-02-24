@@ -57,6 +57,10 @@ done.
 * 可以利用[imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant)插件进行压缩，可以选择压缩的量，比第一种方法好点。
 * 但有些`png`图片在必须保证图片质量的前提下，是确实没办法压缩的，但还是可以略微调整下。`图像`-`调整`-`色调分离`。利用photoshop里面的色调分离，可以压缩一下图片的大小。
 
+安装imagemin-pngquant：
+````
+$ npm install imagemin-pngquant
+````
 imagemin-pngquant的写法（具体可以参考[README](https://github.com/imagemin/imagemin-pngquant)）：
 ````
 //图片压缩
