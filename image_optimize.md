@@ -35,6 +35,13 @@ gulp.task('sprites', function(){
 
 });
 ````
+具体的配置可以参考`sprity`的[README](https://github.com/sprity/sprity)
 
-安装成功之后，把图片放到相应的文件夹中，运行`gulp TASKNAME`，就可以了。相关的操作任务和生成模板项目都已经存在有了，如果不清楚，请询问相关同事。
+最后在命令行中输入命令：
+````
+$ gulp sprites
+````
+done.
+
+### 图片压缩
 
