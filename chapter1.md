@@ -46,14 +46,3 @@ $ gulp watch
 ````
 
 *如果是因为监听端口被占用报错，请修改`gulpfile.js`里面的监听端口。*
-
-
-### 补充
-
-如果需要合并雪碧图，有一个很好使的插件。需要先下载安装[GraphicsMagick](http://www.graphicsmagick.org/)和[ImageMagick](http://www.imagemagick.org/script/index.php)，然后在项目根目录打开命令行安装：
-````
-$ npm install sprity
-$ npm install sprity-gm
-````
-
-安装成功之后，把图片放到相应的文件夹中，运行`gulp TASKNAME`，就可以了。相关的操作任务和生成模板项目都已经存在有了，如果不清楚，请询问相关同事。
