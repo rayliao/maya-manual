@@ -48,3 +48,22 @@ done.
 先说下`jpeg`格式的图片，尽可能的压缩图片大小，其实`jpeg`的格式是比较容易压缩的，在存储为web所用格式的时候，选择一下图片的质量或品质就可以了，选择“非常高”或者“高”就可以了，也就是品质60到80之间，尽量保证图片是小于`300kb`的。
 
 尺寸中或大的`jpeg`格式的图片请勾选`连续`模式，而不是优化模式。为什么呢，因为优化模式的图片加载方式是从上到下加载，而`连续`模式的加载方式是从低像素到高像素加载的。
+
+`png`格式的图片压缩会比较难一点，和`jpeg`一样，尺寸中或大的请`交错`模式，交错模式和连续模式一样，加载方式是从低像素到高像素加载的。
+
+下面有几种压缩`png`图片的方法：
+
+* 可以上传`png`图片到[tinypng](https://tinypng.com/),但这个方式有个缺点，没办法控制压缩的量，压缩太重了，图片质量太差。
+* 可以利用[imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant)插件进行压缩，可以选择压缩的量，比第一种方法好点。
+* 但有些`png`图片在必须保证图片质量的前提下，是确实没办法压缩的，但还是可以略微调整下。`图像`-`调整`-`色调分离`。利用photoshop里面的色调分离，可以压缩一下图片的大小。
+
+imagemin-pngquant的写法（具体可以参考[README](https://github.com/imagemin/imagemin-pngquant)）：
+````
+//图片压缩
+gulp.task('imagemin', function(){
+    var pngquant = require('imagemin-pngquant');
+    gulp.src('app/common/img/src/*.png')
+        .pipe(pngquant({quality: '60', speed: 4})())
+        .pipe(gulp.dest('app/common/img/min'));
+});
+````
