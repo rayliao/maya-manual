@@ -3,10 +3,6 @@
 > 官方站点[http://requirejs.org/](http://requirejs.org/)
 
 
-## 中文翻译
-> [http://makingmobile.org/docs/tools/requirejs-api-zh/#usage](http://makingmobile.org/docs/tools/requirejs-api-zh/#usage)
-
-
 *简单理解为一个脚本加载器 :D*
 
 1. [如何加载一个模块(文件)](http://makingmobile.org/docs/tools/requirejs-api-zh/#jsfiles)
