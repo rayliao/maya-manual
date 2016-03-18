@@ -11,8 +11,18 @@
 official
   |--app
   |   |--common
+  |   |   |--css  //公共样式，诸如日期，弹出层，验证插件的样式，也包括index和member的公共样式。
+  |   |   |--img  //公共图片
+  |   |   |--js
+  |   |      |--common //公共脚本
+  |   |      |--lib  //第三方插件
+  |   |      |--app.js //requirejs配置
   |   |--oldthemes
   |   |--themes
+  |       |--default
+  
+  |       |--themes1
+  |       |--themes2
   |--gulpfile.js
   |--sprite-tpl.mustache //旧版，弃用
   |--sprity-css.hbs  //雪碧图生成样式的模板
