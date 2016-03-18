@@ -1,5 +1,31 @@
 # 官网绑页面注意事项
 
+### 复制新站
+修改`theme.config`，就是改`themes7`这个值:
+````
+<?xml version="1.0" encoding="utf-8" ?>
+<Theme title="themes7"
+	  themeType="custom"
+      previewImageUrl="~/themes/themes7/preview.jpg"
+      previewText="themes7"> 
+</Theme>
+````
+修改`_ViewStart.cshtml`，就是改`themes7`这个值：
+````
+@{
+    Layout = "~/themes/themes7/Views/Shared/_Layout.cshtml"; 
+}
+````
+下面这些图片需保留：
+
+img文件夹下：
+````
+favicon.ico，loading.gif, noactivity.png
+````
+member文件夹下:
+````
+freeze.png, level.gif，loading.gif, noaccess.png，valid_false.png, valid_true.png，valid_warn.png
+````
 ### 多语言
 多语言分数据库多语言和文本多语言，前者用于重复性较高的，后者是针对自己的站的多语言。
 ##### 数据库多语言命名规则
