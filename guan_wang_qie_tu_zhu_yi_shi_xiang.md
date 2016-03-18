@@ -21,7 +21,7 @@ official
   |   |--oldthemes //旧版模板，备份用
   |   |--themes
   |       |--default  //模板名称default
-  |       |   |--css  //模板css
+  |       |   |--css  //模板css，注意里面css会引用公共部分的样式，公共有定义的样式就没必要重复写了，所以最好先了解下公共部分的样式定义。
   |       |   |--img
   |       |   |   |--icon  //用于合并雪碧图的图片文件夹，这个会生成_icon.scss的样式
   |       |   |   |--member //存放member的图片，里面也有类似icon的用于雪碧图的文件夹
