@@ -29,7 +29,7 @@ member文件夹下:
 freeze.png, level.gif，loading.gif, noaccess.png，valid_false.png, valid_true.png，valid_warn.png
 ````
 ### 多语言
-多语言分数据库多语言和文本多语言，前者用于重复性较高的，后者是针对自己的站的多语言。
+多语言分数据库多语言和文本多语言，前者用于重复性较高的每个站都会有的，后者是针对自己站的特殊的多语言。
 ##### 数据库多语言命名规则
 ````
 分类名：
