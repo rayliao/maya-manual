@@ -17,12 +17,23 @@ official
   |   |      |--common //公共脚本
   |   |      |--lib  //第三方插件
   |   |      |--app.js //requirejs配置
-  |   |--oldthemes
+  |   |
+  |   |--oldthemes //旧版模板，备份用
   |   |--themes
-  |       |--default
-  
+  |       |--default  //模板名称default
+  |       |   |--css  //模板css
+  |       |   |--img
+  |       |   |   |--icon  //用于合并雪碧图的图片文件夹，这个会生成_icon.scss的样式
+  |       |   |   |--member //存放member的图片，里面也有类似icon的用于雪碧图的文件夹
+  |       |   |   |--logo.jpg
+  |       |   |   
+  |       |   |--js
+  |       |   |--member  //存放member的页面
+  |       |   |--index.html
+  |       |
   |       |--themes1
   |       |--themes2
+  |       
   |--gulpfile.js
   |--sprite-tpl.mustache //旧版，弃用
   |--sprity-css.hbs  //雪碧图生成样式的模板
