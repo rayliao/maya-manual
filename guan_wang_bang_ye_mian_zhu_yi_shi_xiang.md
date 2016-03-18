@@ -1,6 +1,8 @@
 # 官网绑页面注意事项
 
 ### 复制新站
+**修改文件**
+
 修改`theme.config`，就是改`themes7`这个值:
 ````
 <?xml version="1.0" encoding="utf-8" ?>
@@ -16,7 +18,7 @@
     Layout = "~/themes/themes7/Views/Shared/_Layout.cshtml"; 
 }
 ````
-下面这些图片需保留：
+**保留图片**
 
 img文件夹下：
 ````
