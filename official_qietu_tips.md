@@ -43,3 +43,117 @@ official
   |--sprite-tpl.mustache //旧版，弃用
   |--sprity-css.hbs  //雪碧图生成样式的模板
 ```
+
+### 样式编写提醒
+
+* 请先查看变量文件`_variables.scss`的变量定义，可通过修改变量的值达到样式的定义。
+
+```
+//$img是当前图片路径，$img-common是公共图片的路径
+//$icon-sprite-path是用于合并雪碧图的路径
+$img: '../img/';
+$img-common: '../../../common/img/';
+$icon-sprite-path: '../img';
+
+//这个是基本布局宽度，用于wrapper
+$base-width: 1200px;
+
+//随机版本号，记得加在图片后面
+$version: unique-id();
+
+//文本颜色的样式变量，写在公共的layout里
+$text-default: #edc2a2;
+$text-primary: #c5201e;
+$text-success: #3c3c3c;
+$text-info: #909090;
+$text-warning: #FEAB03;
+$text-danger: #c33;
+
+//弹出层的样式变量
+$art-dialog-background: #001028;
+$art-dialog-border: #104aa0;
+$art-dialog-header-background: #02307d;
+$art-dialog-header-border: #104aa0;
+$art-dialog-footer-button: #fff;
+...
+```
+
+* 合并图的样式，如`icon`，`bg`等，请在公共样式('../../../common/css/layout')之前引入。
+
+* 请先了解公共样式已经定义的样式，不必再重复定义。
+
+公共样式`_layout.scss`说明：
+```
+//首页的公共样式，慎重修改
+@import "variables";
+
+@import "reset";
+
+@import "dialog";
+
+@import "ywz";
+
+@import "validator";
+
+@import "scrollbar";
+
+//移除outline的样式
+button, a {
+    outline: none;
+}
+
+//像这样常用的浮动，相对定位的class已经定义了，就没必要再重复定义了
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.hider {
+    display: none !important;
+}
+
+.relative {
+    position: relative;
+}
+
+```
+
+* 请把几乎每个分站都会用上的模块(例如头部钱包下拉样式，表单样式，弹出层样式，在线客服样式等)放在前面，便于修改，整理，移除。
+
+* 请把样式写工整一点，便于查看。
+
+该有的空格间隙要加上，看起来舒服点。
+```
+//bad
+.animation1{
+  -webkit-animation-duration:1s ;
+  -o-animation-duration:1s ;
+  animation-duration:1s ;
+}
+
+//good
+.animation1 {
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+```
+
+尽量避免使用颜色来定义样式。
+```
+//bad
+.red {
+  color: red;
+}
+
+.btn-red {
+  background: red;
+}
+```
