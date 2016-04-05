@@ -3,6 +3,7 @@
 * [简介](README.md)
 * [部署开发环境](chapter1.md)
 * [编码规范](chapter3.md)
+   * [css规范](css.md)
 * [框架和库](chapter4.md)
    * [requirejs](requirejs.md)
    * [form](form.md)
