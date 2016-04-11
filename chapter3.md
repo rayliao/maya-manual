@@ -9,3 +9,5 @@
 [bootstrap编码规范](http://codeguide.bootcss.com/)
 
 [Airbnb JavaScript Style Guide](https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md)
+
+[Airbnb CSS/Sass Styleguide](https://github.com/airbnb/css)

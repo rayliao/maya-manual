@@ -16,9 +16,83 @@ font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei
 * 最后补充英文字体族。`serif`或`sans-serif`。
 * 有空格的英文字体名称和中文字体名称加上双引号。如`"Microsoft YaHei", "微软雅黑"`。
 
-**sass规范写法**
+**css规范写法**
 
-* scss可以嵌套写，但不要嵌套太多层，一来不美观，二来影响渲染。
+* 使用2个空格作为缩进
+* 类名使用破折号代替驼峰法
+* 不要使用ID选择器
+* 在一个规则声明中应用了多个选择器时，每个选择器独占一行
+* 在规则声明的左大括号 { 前加上一个空格
+* 在属性的冒号 : 后面加上一个空格，前面不加空格
+* 规则声明的右大括号 } 独占一行
+* 规则声明之间用空行分隔开
+
+```
+// Bad
+
+.avatar{
+    border-radius:50%;
+    border:2px solid white; }
+.no, .nope, .not_good {
+    // ...
+}
+#lol-no {
+  // ...
+}
+
+// Good
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.selector,
+.per-line {
+  // ...
+}
+```
+
+**JavaScript钩子**
+
+避免在 CSS 和 JavaScript 中绑定相同的类。否则开发者在重构时通常会出现以下情况：轻则浪费时间在对照查找每个要改变的类，重则因为害怕破坏功能而不敢作出更改。
+
+我们推荐在创建用于特定 JavaScript 的类名时，添加 .j- 前缀：
+```
+<button class="btn btn-primary j-request-to-book">Request to Book</button>
+```
+
+### sass规范写法
+
+**属性声明的顺序**
+
+1.属性声明
+
+首先列出除去`@include`和嵌套选择器之外的所有属性声明。
+
+```
+.btn-green {
+  background: green;
+  font-weight: bold;
+  // ...
+}
+```
+
+2.`@include`声明，紧随的是`@include`声明。
+
+```
+.btn-green {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+  // ...
+}
+```
+
+3.接着是嵌套选择器。
+
+* scss可以嵌套写，但不要嵌套太多层（最好最好不要超过3层），一来不美观，二来影响渲染。
 
 ```
 // bad
@@ -28,7 +102,7 @@ font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei
             .guide-line {
                 .guide-lines {
                     .guide-linefi {
-                        // OMG
+                        // 我的天啊！！！
                     }
                 }
             }
@@ -56,6 +130,7 @@ font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei
 }
 // 另外说一下，上面class的命名不建议，line、lines和linefi，含义模糊，让人看了一头雾水，不知道是同辈的还是父子辈的。
 ```
+* 永远不要嵌套ID选择器！
 
 * `ImageMagick Display`和`GraphicsMagick Display`这两个软件不要删除，因为之前有同事删掉，然后雪碧图的task用不了，所以这里提一下。
 
