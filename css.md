@@ -1,5 +1,7 @@
 # css规范
 
+在VS Code安装了扩展之后，在根目录添加`stylelintrc`配置文件，具体配置规则可以参考其官网，配置好之后，打开样式文件，会自动检测规范，右下角的状态栏会针对不规范的写法提示警告提示。
+
 **合理声明字体**
 
 首先因为设计稿都会有统一的基本字体，所以字体统一在`body`声明就可以了，避免到处声明字体，除非里面内容需要用到其他字体，才需要在内容那重写字体的声明。
@@ -132,7 +134,7 @@ font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei
 ```
 * 永远不要嵌套ID选择器！
 
-* `ImageMagick Display`和`GraphicsMagick Display`这两个软件不要删除，因为之前有同事删掉，然后雪碧图的task用不了，所以这里提一下。
+* `ImageMagick Display`和`GraphicsMagick Display`这两个软件不要删除，因为之前有同事删掉，然后雪碧图的task用不了，所以这里提一下。（这个不需要了）
 
 * css应该要一个模块一个模块标识清楚，公共的样式统一放在前面，便于自己和他人修改。
 
