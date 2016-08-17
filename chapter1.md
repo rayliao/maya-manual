@@ -33,6 +33,10 @@ $ npm install -g requirejs
 很多种开发工具，你要使用记事本我也没意见啦。推荐使用`sublime text 3`，因为开发过程`css`使用`sass`，所以需要安装`sass`的插件，可以先安装`package control`，然后安装`sass`。如果不清楚请查阅[sublime text 3官网](http://www.sublimetext.com/3)。
 
 
+### 命令行工具
+
+推荐使用[Cmder](http://cmder.net/)，可以轻松复制粘贴，更多隐藏技能等你发现。
+
 ### 安装项目依赖
 
 在项目根目录打开命令行(windows用户可以按住`Shift`键，选择项目文件夹，点击鼠标右键，选择“在此处打开命令行窗口”)，安装`package.json`里面的依赖模块。
