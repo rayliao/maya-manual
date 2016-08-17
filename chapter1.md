@@ -3,7 +3,7 @@
 
 ### 安装nodejs
 
-去[官网](https://nodejs.org/en/)下载安装，**暂时不建议安装5.0以上版本**。
+去[官网](https://nodejs.org/en/)下载安装，*可以安装当前最新版本*。
 
 命令行运行以下命令查看是否安装成功：
 
@@ -18,7 +18,7 @@ $ npm install -g gulp
 
 ### 全局安装requirejs
 
-压缩资源文件的时候要用上，只是开发可以不用安装。
+打包压缩资源文件的时候要用上，只是开发可以不用安装。
 
 ````
 $ npm install -g requirejs
