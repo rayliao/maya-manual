@@ -28,6 +28,12 @@ $ npm install -g requirejs
 ### 选择开发工具
 
 强烈推荐[Visual Studio Code](https://code.visualstudio.com)，非常好用，打开又快，很多格式都支持，总之优点很多。
+
+既然说到VS Code，有三个扩展可以顺便安装上去，后面开发过程会使用。
+* ESLint
+* stylefmt
+* stylelint
+
 ---
 **sublime不推荐了**
 很多种开发工具，你要使用记事本我也没意见啦。推荐使用`sublime text 3`，因为开发过程`css`使用`sass`，所以需要安装`sass`的插件，可以先安装`package control`，然后安装`sass`。如果不清楚请查阅[sublime text 3官网](http://www.sublimetext.com/3)。
